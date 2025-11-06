@@ -1,13 +1,25 @@
 package com.daniel;
 
 public class Main {
-    
-    public static float ayNoJuanJo =  0.5f;
-    public static final int DIAS_DE_LA_SEMANA = 7;
 
     public static void main(String[] args) {
-        
-        System.out.println(1+2);
+
+        Condicionales instancia = new Condicionales();
+        instancia.esPar(
+            
+        );
+        int resultado = instancia.logitudeDeText("Lorem ipsum asdkajssshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddigbhquleccccccccccccbiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiqqbeciddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjsdcbnmkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkbsakjdcdbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbblllllllllllllllllkasdcbjjjjjjjjjjjjjjksddddddddddddddddddddddddddddddddjksdhfkjshsdjkfh");
+        //Static - Para operaciones y no almacenan valores
+        Condicionales.diaSemana(4);
+        System.out.println("Que muestra? "+ resultado);
+        System.out.println(instancia.mayor(0, 0, 0));
+        System.out.println(instancia.mayor(-11, -9, -1));
+        System.out.println(instancia.mayor(100, 10, 2));
+        System.out.println(instancia.mayor(100, 10, 200));
+    }
+}
+
+/**System.out.println(1+2);
         System.out.println(1-2);
         System.out.println(1*2);
         System.out.println(1/2);
@@ -62,6 +74,4 @@ public class Main {
             }
             System.out.println(cosasPorHacer[dia]);
             System.out.println(dia);
-        }
-}
-
+        **/
