@@ -1,77 +1,135 @@
 package com.daniel;
 
+// public class Main {
+
+
+
+//     public  static final int DIAS_DELA_SEMANA = 7;
+//     public static void main(String[] args) { 
+
+//         // //no es primitivo
+//         // int numero = (1);
+//         // long otroNumero = 100000000L;
+//         // boolean verdadero = true;
+//         // float decimal = 4.5f;
+//         // double decimalPro = 3.1416;
+//         // char caracter = 'A';
+//         // String saludo = "Hola mundo"; 
+
+//         // System.out.println("Tipos primitivos en Java:");
+//         // System.out.println(saludo);
+//         // System.out.println(numero);
+//         // System.out.println(otroNumero);
+//         // System.out.println(verdadero);
+//         // System.out.println(decimal);
+//         // System.out.println(decimalPro);
+//         // System.out.println(caracter);
+        
+//         // System.out.println("Tipos referencia en Java:");
+//         // int [] numeros = {1,2,3,4,5,6,7,8,9,10};
+
+//         // System.out.println(numeros[5]);
+//         // System.out.println(numeros[8]);
+//         // System.out.println(numeros[1]);
+//         // System.out.println(saludo);
+
+//         System.out.println(1+2);
+//         System.out.println(1-2);
+//         System.out.println(1*2);
+//         System.out.println(1/2);
+//         System.out.println(5%2);
+//         System.out.println(Math.pow( 2 , 5));
+         
+
+//         circunferencia(7);
+//     }
+
+//     public static double  circunferencia(int diametro) {
+//         System.out.println("Circunferencia de un circulo");
+//         return 2 * Math.PI * diametro;
+        
+//     }
+
+//     public static  void actividades(int dia){
+//         String [] cosasPorHacer = {"Ir a la iglesaia", "Venir a campus","ir a campus de nuevo",
+//             "si fui a campus?", "no volver a campus", "ser feliz", "descansar"};
+//             System.out.println("Cosas por hacer el dia ");
+//             if(dia >= DIAS_DELA_SEMANA){
+//                 System.out.println("No hay actividades para este dia");
+//             }
+//             else{
+//             System.out.println(cosasPorHacer[dia]);
+//             System.out.println(dia);
+//             }
+//     }
+// }
+
+
+// import java.util.Random;
+// import java.util.Scanner;
+
+
+// public class Main {
+//     final  static int maxRange = 10000;
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         Random random = new Random(); 
+//         //CALCULAR EL MINIMO Y EL MAXIMOO ALEATORIO DE UN ARRAY
+//         System.out.println("Ingrese el valor minimo:");
+//         var min = scan.nextInt();
+//         System.out.println("Ingrese el valor maximo:");
+//         var max = scan.nextInt();
+//         int[] numbers = new int[maxRange];
+//         for(int a=0; a < numbers.length; a++) {
+//             numbers[a] = random.nextInt(min, max+1);
+//         }
+//         System.out.println("Ingrese la cantidad de numeros a buscar:");
+//         var counter = scan.nextInt();
+//         for(int a=0; a < counter; a++) {
+//             System.out.println("Ingrese el inidice a buscar [1 hasta "+maxRange+"]:");
+//             var index = scan.nextInt();
+//             System.out.println("Oiga el indice es: "+ (index)+"  = " + numbers[index -1]);
+//         }
+//         scan.close();
+//     }
+// }
+
+
+import  java.util.Scanner;
+
+import com.daniel.game.ahorcado.*;
+
+
+
 public class Main {
-
     public static void main(String[] args) {
-
-        Condicionales instancia = new Condicionales();
-        instancia.esPar(
-            
-        );
-        int resultado = instancia.logitudeDeText("Lorem ipsum asdkajssshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddigbhquleccccccccccccbiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiqqbeciddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjsdcbnmkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkbsakjdcdbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbblllllllllllllllllkasdcbjjjjjjjjjjjjjjksddddddddddddddddddddddddddddddddjksdhfkjshsdjkfh");
-        //Static - Para operaciones y no almacenan valores
-        Condicionales.diaSemana(4);
-        System.out.println("Que muestra? "+ resultado);
-        System.out.println(instancia.mayor(0, 0, 0));
-        System.out.println(instancia.mayor(-11, -9, -1));
-        System.out.println(instancia.mayor(100, 10, 2));
-        System.out.println(instancia.mayor(100, 10, 200));
+        Scanner scanner = new Scanner(System.in);
+        boolean flag = true;
+        Ahorcado ahorcado = new Ahorcado();
+       
+        while (flag){
+            System.out.println("""
+            Menu:
+            1. Ahorcado
+            0. Salir
+            Ingrese una opcion (1 o 0):
+            """);
+            switch (scanner.nextInt()) {
+                case 1:
+                    ahorcado.iniciar();
+                    ahorcado.ejecutar(scanner);
+                    break;
+                case 0:
+                    //salir
+                    flag = false;
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.......\nPresione Enter para continuar");
+                    scanner.nextLine();
+                    break;  
+                    
+            }
+        }
+        scanner.close();
     }
 }
-
-/**System.out.println(1+2);
-        System.out.println(1-2);
-        System.out.println(1*2);
-        System.out.println(1/2);
-        System.out.println(10%2);
-        actividades(2);
-
-        System.out.println(Math.pow(2,5));
-
-        var resultado = circunferencia(30);
-        System.out.println(resultado);
-        //int dia = 5;
-        //actividades(dia);
-        //actividades(++dia);
-        //actividades(dia++);
-        //actividades(dia);
-
-        //int numero = 100;
-        //long otroNumero = 10L;
-        //Boolean bandera = true;
-        //Float decimal = 0.5F;
-        //double decimalPro = 0.5;
-        //char caracter = 'A';
-        //String saludo = "Hello world!";
-
-        //System.out.println("Tipos Primitivos"); //No es primitivo
-        //System.out.println(numero);
-        //System.out.println(otroNumero);
-        //System.out.println(bandera);
-        //System.out.println(decimal); //Float
-        //System.out.println(decimalPro);  System.out.println(caracter);
-        //int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        //System.out.println(numeros[0]);
-        //System.out.println(numeros[1]);
-        //System.out.println(numeros[2]);
-        //System.out.println(numeros[3]);
-        //System.out.println(saludo); // NO es primitivo es de referencia
-        }
-
-        public static double circunferencia(int diametro) {
-            System.out.println("Circunferencia");
-            return 2 * Math.PI * diametro;
-        }
-
-        public static void actividades(int dia) {
-            String[] cosasPorHacer = {"Ir a la iglesia", "Ir a campus", "Ir a campus", "Ir a campus", "Ir a campus", "Ir por ultima vez a campus", "Ser feliz"};
-            System.out.println("Que nos toca hacer Hoy!");
-            if (dia >= 7) {
-                System.out.println("Bye!");
-            } else {
-                System.out.println(cosasPorHacer[dia]);
-                System.out.println(dia);
-            }
-            System.out.println(cosasPorHacer[dia]);
-            System.out.println(dia);
-        **/
