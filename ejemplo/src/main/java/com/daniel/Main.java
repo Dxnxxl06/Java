@@ -98,8 +98,8 @@ package com.daniel;
 import  java.util.Scanner;
 
 import com.daniel.game.ahorcado.*;
-
-
+import com.daniel.ejercicios.factorial;
+import com.daniel.ejercicios.Camper;
 
 public class Main {
     public static void main(String[] args) {
@@ -109,15 +109,44 @@ public class Main {
        
         while (flag){
             System.out.println("""
-            Menu:
+            **********Menu**********
             1. Ahorcado
+            2. Factorial
             0. Salir
             Ingrese una opcion (1 o 0):
             """);
             switch (scanner.nextInt()) {
                 case 1:
-                    ahorcado.iniciar();
+                    ahorcado.iniciar("X");;
                     ahorcado.ejecutar(scanner);
+                    break;
+                case 2:
+                    System.out.println(ahorcado.palabrasAdivinadas);
+                    break;
+                case 3:
+                //Administrador
+                //Trainer
+                //Colaborador
+                   /*  Camper camper = new Camper ("Andres","Perea", 16, "TI", "1095795599", 1, "Trans", "andres@gmail.com", "018000918080", 10);
+                    camper.nombre = "Andres";
+                    camper.apellido = "Perea";
+                    camper.edad = 16;
+                    camper.tipoDocumento = "TI";
+                    camper.documento = "1095795599";
+                    camper.estratoSocial = 1;
+                    camper.genero = "Trans";
+                    camper.email = "andres@gmail.com";
+                    camper.telefono = "018000918080";
+                    camper.nivelIngles = 10;
+                    
+                    camper.domir();
+                    camper.divertirse();
+
+                    camper.reportar();
+                    camper.calificar();
+                    */
+
+
                     break;
                 case 0:
                     //salir
