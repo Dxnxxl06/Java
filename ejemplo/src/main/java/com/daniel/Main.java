@@ -1,5 +1,7 @@
 package com.daniel;
 
+import java.util.Scanner;
+
 // public class Main {
 
 
@@ -95,58 +97,45 @@ package com.daniel;
 // }
 
 
-import  java.util.Scanner;
+//import  java.util.Scanner;
 
-import com.daniel.game.ahorcado.*;
-import com.daniel.ejercicios.factorial;
-import com.daniel.ejercicios.Camper;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+//import com.daniel.ejercicios.bank.*;
+
+
+/*public class Main {
+    public static void main(String[] args) { //Crea una clase con el atributo privado balance.
+        Scanner scanner = new Scanner(System.in); // 
         boolean flag = true;
-        Ahorcado ahorcado = new Ahorcado();
+        var account = new BankAccount();
        
         while (flag){
             System.out.println("""
             **********Menu**********
-            1. Ahorcado
-            2. Factorial
+            1. Consignar
+            2. Retirar
+            3. Ver saldo
             0. Salir
-            Ingrese una opcion (1 o 0):
+            
             """);
             switch (scanner.nextInt()) {
                 case 1:
-                    ahorcado.iniciar("X");;
-                    ahorcado.ejecutar(scanner);
-                    break;
+                    System.out.println("Ingrese el monto que quiere consignar:");
+                    if (!scanner.hasNextDouble()){
+                        System.out.println("Por favor ingrese un valor numerico, no sea como dario");
+                        scanner.next();
+                    } 
+                    break; 
                 case 2:
-                    System.out.println(ahorcado.palabrasAdivinadas);
+                    System.out.println("Ingrese el monto que quiere retirar:");
+                    if (!scanner.hasNextDouble()){
+                        System.out.println("Por favor ingrese un valor numerico, no sea como dario");
+                        scanner.next();
+                    }
                     break;
                 case 3:
-                //Administrador
-                //Trainer
-                //Colaborador
-                   /*  Camper camper = new Camper ("Andres","Perea", 16, "TI", "1095795599", 1, "Trans", "andres@gmail.com", "018000918080", 10);
-                    camper.nombre = "Andres";
-                    camper.apellido = "Perea";
-                    camper.edad = 16;
-                    camper.tipoDocumento = "TI";
-                    camper.documento = "1095795599";
-                    camper.estratoSocial = 1;
-                    camper.genero = "Trans";
-                    camper.email = "andres@gmail.com";
-                    camper.telefono = "018000918080";
-                    camper.nivelIngles = 10;
-                    
-                    camper.domir();
-                    camper.divertirse();
-
-                    camper.reportar();
-                    camper.calificar();
-                    */
-
-
+                    System.out.println("Digite su contrasena para ver su saldo:" );
+                    account.balance(0);
                     break;
                 case 0:
                     //salir
@@ -157,6 +146,33 @@ public class Main {
                     scanner.nextLine();
                     break;  
                     
+            }
+        }
+        scanner.close();
+    }
+}*/
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean flag = true;
+        while(flag){
+            System.out.println("""
+                    *****Menu*****
+                    1.Digitar usuraio y contrasena
+                    0.Salir
+                    """);
+            switch (scanner.nextInt()) {
+                case 1:
+                    System.out.println("Ingrese su usuario y contrasena");
+                    break;
+                case 0:
+                    flag = false;
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida");
+                    scanner.nextLine();
             }
         }
         scanner.close();
