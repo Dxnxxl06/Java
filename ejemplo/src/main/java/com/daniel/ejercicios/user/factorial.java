@@ -1,4 +1,4 @@
-package com.daniel.ejercicios;
+package com.daniel.ejercicios.user;
 
 public class factorial {
     

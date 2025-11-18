@@ -1,6 +1,6 @@
-package com.daniel.ejercicios;
+package com.daniel.ejercicios.user;
 
-public class Camper {
+/*public class Camper {
     public String nombre, apellido;
     public int edad;
     public String tipoDocumento, documento;
@@ -45,3 +45,4 @@ public class Camper {
         System.out.println("Pone asistencia: " +nombre);
     }
 }
+*/

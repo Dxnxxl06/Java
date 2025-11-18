@@ -1,4 +1,4 @@
-package com.daniel;
+package com.daniel.game.ahorcado;
 
 public class Condicionales {
     //1. Crea una funcion que diga si un numero es par o no
